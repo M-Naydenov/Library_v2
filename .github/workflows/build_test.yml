@@ -31,7 +31,5 @@
         run: npm run server &
       - name: Start Frontend
         run: npm start &
-      - name: Wait for response
-        run: npx wait-on http://localhost:3000 http://localhost:3030
       - name: Run tests
         run: npm test
